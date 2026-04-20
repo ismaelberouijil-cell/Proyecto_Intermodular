@@ -1,11 +1,16 @@
-.info-container {
-    align-items: center;
+body {
     display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;
+    background: #121212;      
 }
 
+.info-container {
+    display: flex;
+    gap: 40px;
+}
 .horarios, .contacto {
     background: #1e1e1e;
     color: white;
