@@ -45,6 +45,7 @@ header .nav a{
     background-color: rgb(153, 105, 45);
     color: white;
 }
+
 @media screen and (max-width: 768px){
     .header{
         grid-template-columns: 1fr;
