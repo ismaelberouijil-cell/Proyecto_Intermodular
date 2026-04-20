@@ -1,0 +1,27 @@
+.body{
+    background-color: red;
+    text-align: center;
+    color:white;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
