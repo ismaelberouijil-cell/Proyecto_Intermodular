@@ -1,5 +1,5 @@
 # Proyecto_Intermodular
-
+empezamos nuestra aventura en el trabajo intermodular
 # Mi_Proyecto
 
 # Creacion de cesta
