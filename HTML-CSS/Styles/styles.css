@@ -20,6 +20,11 @@
     gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
+    display: 0-block; 
+    border: 2px solid #1276b9; 
+    padding: 20px 40px;
+    color: #333;
+    border-radius: 8px; 
 }
 
 nav:hover {
@@ -49,3 +54,39 @@ nav:hover {
 
 
 
+.info-container {
+    display: flex;
+    gap: 40px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;
+    background: #121212;  
+}
+.horarios, .contacto {
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+h1{
+    border-bottom: 2px solid #16c4c4;
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #16c4c4;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}

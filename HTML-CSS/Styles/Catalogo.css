@@ -78,3 +78,9 @@ body {
     color: #09a9ee;
     font-weight: bold;
 }
+
+button{
+    background-color: #09a9ee;
+    color: white;
+    border-radius: 10px;
+}
