@@ -8,6 +8,7 @@ Create table Marca(
     nombre varchar(20) not null,
     Pais_Origen varchar(20) not null
 );
+
 Create table Movil(
     ID_Movil varchar(50) not null,
     Primary key (ID_Movil),
