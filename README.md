@@ -21,7 +21,6 @@ Hemos decidido quitar la cesta porque nos va a liar, tambien hemso pensado en qu
 
 Hemos arreglado la base de datos ya hora esta bien y en el src la conexion de java con la base de datos
 =======
-## conexion con java y base de datos
+### conexion con java y base de datos
 
 Hemos arreglado la base de datos ya hora esta bien y en el src la conexion de java con la base de datos
->>>>>>> 48b68e0f304c87df8413496b503b4a4856ee8547
