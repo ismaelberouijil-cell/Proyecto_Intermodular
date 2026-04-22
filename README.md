@@ -1,6 +1,5 @@
 # Proyecto_Intermodular
 
-
 ## empezamos nuestra aventura en el trabajo intermodular
 
 Nuestra idea es hacer una web donde salga la informacion de la empresa como a que hora abren, algo sobre cuando se fundo la empresa, alguna historia de la empresa y despues lo importante un sitio donde puedas comprar un movil y ya
@@ -19,4 +18,4 @@ Hemos decidido quitar la cesta porque nos va a liar, tambien hemso pensado en qu
 
 ## conexion con java y base de datos
 
-Hemos arreglado la base de datos ya hora esta bien y en el src la conexion de java con la base de datos 
+Hemos arreglado la base de datos ya hora esta bien y en el src la conexion de java con la base de datos
