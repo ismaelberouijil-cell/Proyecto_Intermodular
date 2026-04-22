@@ -25,7 +25,7 @@ body {
 }
 
 .header .logo {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -41,32 +41,23 @@ body {
     color: #dcdcff;
 }
 
-/* LOGO IMAGEN */
 .logo img {
-    width: 120px;
+    width: 400px;
     display: block;
     margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-/* SECCIONES */
-section {
-    padding: 30px;
-}
 
-/* TITULOS */
-h1, h2 {
-    margin-bottom: 15px;
+h1{
+    margin-bottom: 5px;
     color: #667eea;
+    margin: 10px;
 }
 
-/* LISTAS */
-ul {
+ul, li {
     list-style: none;
-}
-
-ul li {
     background: #f5f6ff;
     margin: 10px 0;
     padding: 12px;
@@ -74,16 +65,14 @@ ul li {
     transition: 0.3s;
 }
 
-ul li:hover {
+ul, li:hover {
     background: #e4e7ff;
 }
 
-/* CONTACTO */
 .contacto {
     border-top: 1px solid #eee;
 }
 
-/* FOOTER */
 .footer {
     background: #2d2d44;
     color: white;
@@ -92,18 +81,45 @@ ul li:hover {
 }
 
 .footer p {
-    margin-bottom: 10px;
+    margin-bottom:1px;
 }
 
-/* REDES */
 .social a {
     display: inline-block;
     margin: 5px 10px;
     color: #aab0ff;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.social a:hover {
-    color: white;
+/* MOVIL  */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+/* TABLET  */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .col {
+    flex: 1 1 100%;
+  }
+}
+
+/* ORDENADOR */
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
 }

@@ -5,8 +5,8 @@ body{
 }
 
 header{
-    background:#16c4c4;
-    color:rgb(0, 0, 0);
+    background:linear-gradient(135deg, #667eea, #764ba2);
+    color:rgb(255, 255, 255);
     text-align:center;
     padding:30px;
     border-radius: 1px;
@@ -24,18 +24,18 @@ header h1{
 }
 
 .card{
-    background:white;
+    background:linear-gradient(135deg, #667eea, #764ba2);
     padding:30px;
     border-radius:20px;
-    box-shadow:0 4px 12px rgba(29, 75, 50, 0.08);
+    box-shadow:0 4px 12px rgba(255, 255, 255, 0.08);
     margin-bottom:20px;
-    border-color: #111;
+    border-color: #ffffff;
 }
 
 .card h2{
-    color:#16c4c4;
+    color: linear-gradient(135deg, #667eea, #764ba2);
     margin-bottom:10px;
-    border-color: #111;
+    border-color: #ffffff;
 }
 
 .grid{
@@ -50,7 +50,6 @@ header h1{
     padding:20px;
     border-radius:12px;
     text-align:center;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .box h3{
@@ -58,12 +57,12 @@ header h1{
 }
 
 .box p{
-    color:#555;
+    color:#000000;
 }
 
 footer{
-    background:#16c4c4;
-    color:rgb(0, 0, 0);
+    background:linear-gradient(135deg, #667eea, #764ba2);
+    color:rgb(255, 255, 255);
     text-align:center;
     padding:20px;
     margin-top:30px;
