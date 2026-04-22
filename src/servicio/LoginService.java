@@ -1,13 +1,22 @@
 package servicio;
 
 import dao.ClienteDAO;
+import dao.MovilDAO;
 import modelo.Cliente;
+import modelo.Movil;
 
-public class LoginService {
+import java.util.List;
 
-    private ClienteDAO dao = new ClienteDAO();
+public class CatalogoService {
 
-    public Cliente iniciarSesion(String email) {
-        return dao.login(email);
+    private ClienteDAO clienteDAO = new ClienteDAO();
+    private MovilDAO movilDAO = new MovilDAO();
+
+    public Cliente login(String email, String password) {
+        return clienteDAO.login(email, password);
+    }
+
+    public List<Movil> obtenerCatalogo() {
+        return movilDAO.obtenerTodos();
     }
 }

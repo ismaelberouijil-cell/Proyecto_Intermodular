@@ -3,8 +3,7 @@ Create database Catalogo;
 Use Catalogo;
 
 Create table Marca(
-    ID_Marca varchar(50) not null,
-    Primary key (ID_Marca),
+    ID_Marca int auto_increment primary key,
     nombre varchar(20) not null,
     Pais_Origen varchar(20) not null
 );
@@ -28,6 +27,7 @@ Create table Cliente(
     Nombre varchar(20) not null,
     PrApellido varchar(30) not null,
     SgApellido varchar(30) not null,
+    contraseña varchar(255) not null,
     telefono varchar (15) not null,
     email varchar(100) unique not null,
     direccion varchar(30) not null
@@ -72,7 +72,6 @@ Create table IBAN(
     cSucursal varchar(4) not null,
     cDCCta varchar(10)not null,
     cnumcuenta varchar(20) not null,
-    dni varchar(9) unique not null,
     ID_Cliente varchar(50) not null,
     Foreign Key(ID_Cliente) references Cliente(ID_Cliente)
 );

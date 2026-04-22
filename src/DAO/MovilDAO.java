@@ -1,32 +1,23 @@
-package dao;
+package DAO;
 
-import modelo.Movil;
+import config.Conexion;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import modelo.Movil;
 
 public class MovilDAO {
 
-    public List<Movil> obtenerMoviles() {
-        List<Movil> lista = new ArrayList<>();
-        Connection con = Conexion.conectar();
+    public List<Movil> obtenerTodos() {
 
+        List<Movil> lista = new ArrayList<>();
         String sql = "SELECT * FROM Movil";
 
-        try {
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(sql);
+        try (Connection con = Conexion.getConexion()){
+             
 
-            while (rs.next()) {
-                Movil m = new Movil(
-                    rs.getString("Modelo"),
-                    rs.getDouble("Precio"),
-                    rs.getInt("Stock")
-                );
-                lista.add(m);
-            }
-
-        } catch (Exception e) {
+        } catch (SQLException e) {
+            System.out.println("Error al obtener móviles:");
             e.printStackTrace();
         }
 
