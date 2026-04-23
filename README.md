@@ -21,3 +21,6 @@ Hemos decidido quitar la cesta porque nos va a liar, tambien hemso pensado en qu
 
 Hemos arreglado la base de datos ya hora esta bien y en el src la conexion de java con la base de datos
 
+### avanzando con base de datos y el cominzo de java
+
+hemos empezado la parte de java y tenemos casi acabado base de datos con insert 
