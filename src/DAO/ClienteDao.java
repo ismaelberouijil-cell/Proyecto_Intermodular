@@ -23,7 +23,7 @@ public class ClienteDAO {
                         rs.getString("ID_Cliente"),
                         rs.getString("email"),
                         rs.getString("Nombre"),
-                        rs.getString("password")
+                        rs.getString("password"), sql, 0, sql, sql, sql
                 );
             }
 
