@@ -16,10 +16,7 @@ Hemos probado a hacer una cesta la cual nos esta gustando la idea para que cuand
 
 Hemos decidido quitar la cesta porque nos va a liar, tambien hemso pensado en que los clientes puedan crear usuarios, puedan registrarse e iniciar sesion, por ahora solo tenemos en el html para que inicie
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7c3a17a3cf5851e9bfeb70e5cda548c97b09f362
+ 
 ### conexion con java y base de datos
 
 Hemos arreglado la base de datos ya hora esta bien y en el src la conexion de java con la base de datos
