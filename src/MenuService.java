@@ -17,7 +17,7 @@ public class MenuService {
         int opcion;
 
         do {
-            System.out.println("\n--- TIENDA DE MÓVILES ---");
+            System.out.println("--- TIENDA DE MÓVILES ---");
             System.out.println("1. Ver catálogo");
             System.out.println("2. Iniciar sesión");
             System.out.println("3. Información de la tienda");
@@ -60,4 +60,9 @@ public class MenuService {
         System.out.println("Somos una tienda especializada en smartphones.");
         System.out.println("Ofrecemos las mejores marcas al mejor precio.");
     }
+
+    public static void main(String[] args) {
+        MenuService menu = new MenuService();
+        menu.iniciar();
+    } 
 }

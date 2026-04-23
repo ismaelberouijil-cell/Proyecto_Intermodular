@@ -24,10 +24,10 @@ INSERT INTO Pedido (ID_Pedido, Fecha, Estado, ID_Cliente) VALUES
 ('P003', '2025-04-15', 'Entregado', 'C001');
 
 INSERT INTO Detalle_Pedido (ID_DetallePedido, Cantidad, Precio, ID_Movil, ID_Pedido) VALUES
-('D001', 1, 899.99, 'M001', 'P001'),
-('D002', 2, 299.99, 'M003', 'P002'),
+('D001', 1, 899.30, 'M001', 'P001'),
+('D002', 2, 300, 'M003', 'P002'),
 ('D003', 1, 999.99, 'M002', 'P003'),
-('D004', 1, 799.99, 'M005', 'P001');
+('D004', 3, 799.10, 'M005', 'P001');
 
 INSERT INTO Envio (ID_ENVIO, Empresa_Envio, Estado_Envio, Fecha_Envio, ID_Pedido) VALUES
 ('E001', 'SEUR', 'Entregado', '2025-04-11', 'P001'),
@@ -35,11 +35,17 @@ INSERT INTO Envio (ID_ENVIO, Empresa_Envio, Estado_Envio, Fecha_Envio, ID_Pedido
 ('E003', 'DHL', 'Entregado', '2025-04-16', 'P003');
 
 INSERT INTO Pago (ID_Pago, ID_Pedido, Metodo_Pago, Fecha_Pago, Importe) VALUES
-('PA001', 'P001', 'Tarjeta', '2025-04-10', 1699.98),
-('PA002', 'P002', 'Bizum', '2025-04-12', 599.98),
-('PA003', 'P003', 'PayPal', '2025-04-15', 999.99);
+('PA001', 'P001', 'Tarjeta', '2025-04-10', 1690.50),
+('PA002', 'P002', 'Bizum', '2025-02-12', 599.00),
+('PA003', 'P003', 'PayPal', '2026-04-15', 999.99);
 
 INSERT INTO IBAN (codIban, CodPais, DC, Entidad, cSucursal, cDCCta, cnumcuenta, ID_Cliente) VALUES
 (1, 'ES', '12', '2100', '1234', '56', '1234567890', 'C001'),
 (2, 'ES', '34', '2100', '5678', '90', '0987654321', 'C002'),
 (3, 'ES', '56', '2100', '1111', '22', '1122334455', 'C003');
+
+INSERT INTO Usuario (ID_Marca, Nombre, Pais_Origen) VALUES
+(1, 'diego', 'España'),
+(2, 'gabriel', 'Francia'),
+(3, 'Ismael', 'Marruecos'),
+(4, 'Marta', 'España')

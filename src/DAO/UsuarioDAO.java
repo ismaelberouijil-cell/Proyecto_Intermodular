@@ -1,11 +1,13 @@
-package dao;
+package DAO;
 
 import model.Usuario;
 import java.sql.*;
+import java.sql.Connection;
+
 
 public class UsuarioDAO {
 
-    public boolean login(Usuario usuario) {
+    public boolean login(UsuarioDAO usuario) {
         String sql = "SELECT * FROM usuarios WHERE nombre=? AND password=?";
         
         try (Connection con = ConexionDB.conectar();
