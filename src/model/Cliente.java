@@ -1,4 +1,4 @@
-package modelo;
+package model;
 
 /**
  * Clase Cliente
@@ -8,15 +8,15 @@ package modelo;
 
 public class Cliente {
 
-    private String nombre;
-    private String prApellido;
-    private String dni;
-    private String sgapellido;
-    private String id_cliente;
-    private int telefono;
-    private String email;
-    private String contraseña;
-    private String direccion;
+     String nombre;
+     String prApellido;
+     String dni;
+     String sgapellido;
+     String id_cliente;
+     int telefono;
+     String email;
+     String contraseña;
+     String direccion;
     
    /**
      * @param nombre

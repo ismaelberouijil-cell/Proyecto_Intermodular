@@ -1,12 +1,12 @@
-package dao;
+package DAO;
 
-import config.Conexion;
-import modelo.Cliente;
 import java.sql.*;
 
-public class ClienteDAO {
+import model.Cliente;
 
-    public Cliente login(String email, String password) {
+public class ClienteDao {
+
+    public static Cliente login(String email, String password) {
 
         String sql = "SELECT * FROM Cliente WHERE email = ? AND password = ?";
 

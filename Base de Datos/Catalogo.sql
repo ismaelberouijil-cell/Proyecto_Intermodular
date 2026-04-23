@@ -9,7 +9,7 @@ Create table Marca(
 );
 
 Create table Movil(
-    ID_Movil varchar(50) not null,
+    ID_Movil INT AUTO_INCREMENT PRIMARY KEY,
     Primary key (ID_Movil),
     Modelo varchar(20)not null,
     Precio decimal (10,2),
@@ -21,7 +21,7 @@ Create table Movil(
 );
 
 Create table Cliente(
-    ID_Cliente varchar(50) not null,
+    ID_Cliente INT AUTO_INCREMENT PRIMARY KEY,
     Primary key (ID_Cliente),
     DNI varchar(9) unique not null,
     Nombre varchar(20) not null,
@@ -35,8 +35,7 @@ Create table Cliente(
 );
 
 Create table Pedido(
-    ID_Pedido varchar(50) not null,
-    primary key (ID_Pedido),
+    ID_Pedido INT AUTO_INCREMENT PRIMARY KEY,
     Fecha Date,
     Estado varchar(20) not null,
     ID_Cliente varchar(50) not null,
@@ -44,8 +43,7 @@ Create table Pedido(
 );
 
 Create table Envio(
-    ID_ENVIO varchar(50) not null,
-    primary key(ID_ENVIO),
+    ID_ENVIO INT AUTO_INCREMENT PRIMARY KEY,
     Empresa_Envio varchar(50),
     Estado_Envio varchar(20) not null,
     Fecha_Envio Date,
@@ -54,8 +52,7 @@ Create table Envio(
 );
 
 Create table Pago(
-    ID_Pago varchar(50) not null,
-    primary key(ID_Pago),
+    ID_Pago INT AUTO_INCREMENT PRIMARY KEY,
     ID_Pedido varchar(50) not null,
     Metodo_Pago varchar(20) not null,
     Fecha_Pago Date,
@@ -77,7 +74,7 @@ Create table IBAN(
 );
 
 Create table Detalle_Pedido(
-    ID_DetallePedido varchar(50) primary key not null,
+    ID_DetallePedido INT AUTO_INCREMENT PRIMARY KEY,
     Cantidad int not null,
     Precio decimal(10,2) not null,
     ID_Movil varchar(50) not null,
