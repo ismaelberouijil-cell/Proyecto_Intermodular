@@ -24,3 +24,7 @@ Hemos arreglado la base de datos ya hora esta bien y en el src la conexion de ja
 ### avanzando con base de datos y el cominzo de java
 
 hemos empezado la parte de java y tenemos casi acabado base de datos con insert 
+
+### Acabamos Base de Datos 
+
+Ahora ya hemos acabado el esquema E-R y hemos casi acabado la parte de java
