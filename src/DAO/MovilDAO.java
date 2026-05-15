@@ -1,5 +1,6 @@
 package DAO;
 
+<<<<<<< HEAD
 import model.Movil;
 
 import java.sql.*;
@@ -16,12 +17,25 @@ public class MovilDAO {
 
         // Consulta SQL para obtener todos los registros
         String sql = "SELECT * FROM Movil";
+=======
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import model.Movil;
+
+public class MovilDAO {
+
+    public List<Movil> obtenerMoviles() {
+        List<Movil> lista = new ArrayList<>();
+        String sql = "SELECT * FROM moviles";
+>>>>>>> b3f5fe0822668d9ce88265406619450b067ab161
 
         try (Connection con = ConexionDB.conectar();
              Statement st = con.createStatement();
              ResultSet rs = st.executeQuery(sql)) {
 
             while (rs.next()) {
+<<<<<<< HEAD
 
                 // Crear objeto móvil con los datos del ResultSet
                 Movil movil = new Movil(
@@ -39,21 +53,39 @@ public class MovilDAO {
 
         } catch (SQLException e) {
             // Mostrar error si falla la consulta
+=======
+                Movil m = new Movil(
+                    rs.getInt("id"),
+                    rs.getString("marca"),
+                    rs.getString("modelo"),
+                    rs.getDouble("precio")
+                );
+                lista.add(m);
+            }
+
+        } catch (SQLException e) {
+>>>>>>> b3f5fe0822668d9ce88265406619450b067ab161
             e.printStackTrace();
         }
 
         return lista;
     }
 
+<<<<<<< HEAD
     // INSERTAR MÓVIL
     public void insertarMovil(Movil movil) {
 
          // Consulta SQL con parámetros
         String sql = "INSERT INTO Movil VALUES (?, ?, ?, ?, ?, ?, ?) ";
+=======
+    public void insertarMovil(Movil m) {
+        String sql = "INSERT INTO moviles (marca, modelo, precio) VALUES (?, ?, ?)";
+>>>>>>> b3f5fe0822668d9ce88265406619450b067ab161
 
         try (Connection con = ConexionDB.conectar();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
+<<<<<<< HEAD
             // Asignar valores a cada parámetro de la consulta
             ps.setString(1, movil.getIdMovil());
             ps.setString(2, movil.getModelo());
@@ -96,6 +128,13 @@ public class MovilDAO {
                 System.out.println("No existe el móvil");
             }
 
+=======
+            ps.setString(1, m.getMarca());
+            ps.setString(2, m.getModelo());
+            ps.setDouble(3, m.getPrecio());
+            ps.executeUpdate();
+
+>>>>>>> b3f5fe0822668d9ce88265406619450b067ab161
         } catch (SQLException e) {
             e.printStackTrace();
         }

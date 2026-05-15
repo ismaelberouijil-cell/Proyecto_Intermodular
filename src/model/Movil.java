@@ -1,5 +1,6 @@
 package model;
 
+<<<<<<< HEAD
 /**
  * Clase Movil
  * 
@@ -178,5 +179,31 @@ public class Movil {
                 "Stock: " + stock + "\n" +
                 "ID Marca: " + idMarca;
 
+=======
+public class Movil {
+    private int id;
+    private String marca;
+    private String modelo;
+    private double precio;
+
+    public Movil(int id, String marca, String modelo, double precio) {
+        this.id = id;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precio = precio;
+    }
+
+    public int getId() { 
+        return id; 
+    }
+    public String getMarca() { 
+        return marca; 
+    }
+    public String getModelo() { 
+        return modelo; 
+    }
+    public double getPrecio() { 
+        return precio; 
+>>>>>>> b3f5fe0822668d9ce88265406619450b067ab161
     }
 }
