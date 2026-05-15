@@ -9,12 +9,15 @@ public class ConexionDB {
     private static final String USER = "root";
     private static final String PASSWORD = "mysql";
 
+    // Método estático para establecer conexión con MySQL
     public static Connection conectar() {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
+            // Mostrar mensaje de error si falla la conexión
             System.out.println("Error al conectar con la BD");
             e.printStackTrace();
+            // Devolver null si no se pudo conectar
             return null;
         }
     }
